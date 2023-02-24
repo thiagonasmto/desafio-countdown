@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+:root{
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./imagens/top-image.svg"), url("./imagens/bottom-image.svg");
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.conteudo{
+    width: 50%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.title h1{
+    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.relogio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.relogio--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relogio--container h4{
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.relogio--container p{
+    color: var(--black);
+    font-weight: 400;
+    font-size: 4.5rem;
+}
+
+.relogio--separador{
+    display: flex;
+    align-items: end;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 4.5rem;
+}
+
+.inscriptions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inscriptions h4{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+
+.inscriptions button{
+    font-weight: 300;
+    font-size: 1rem;
+    border: none;
+    border-radius: .75rem;
+    width: 40%;
+    height: 3.2rem;
+    background-color: var(--purple);
+    color: var(--light-grey);
+}
+
+.logo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
